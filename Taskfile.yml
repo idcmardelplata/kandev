@@ -1,0 +1,10 @@
+---
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - python src/main.py
+  test:
+    cmds:
+      - pytest tests/test_*.py

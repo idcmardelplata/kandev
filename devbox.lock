@@ -1,55 +1,271 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "mongodb@latest": {
-      "last_modified": "2024-07-03T17:18:23Z",
-      "resolved": "github:NixOS/nixpkgs/61684d356e41c97f80087e89659283d00fe032ab#mongodb",
+    "git@latest": {
+      "last_modified": "2024-06-26T05:30:43Z",
+      "resolved": "github:NixOS/nixpkgs/b3f3c1b13fb08f3828442ee86630362e81136bbc#git",
       "source": "devbox-search",
-      "version": "6.0.16",
+      "version": "2.45.1",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/47dx5f6bw31k1ajgj48x3kghdnc51yvg-mongodb-6.0.16",
+              "path": "/nix/store/lfg94jm4cgdnviyzfb4qi5dl94ivf3qk-git-2.45.1",
               "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/fx9bjrg4vgkkb04pbiq3pisxj4aippxk-git-2.45.1-doc"
             }
           ],
-          "store_path": "/nix/store/47dx5f6bw31k1ajgj48x3kghdnc51yvg-mongodb-6.0.16"
+          "store_path": "/nix/store/lfg94jm4cgdnviyzfb4qi5dl94ivf3qk-git-2.45.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/vj57s459a3bs2ba1bvddgmd6ifcfnpy7-mongodb-6.0.16",
+              "path": "/nix/store/ndw4d3hgsy7d7dfg2z7a5q2amin2d9r5-git-2.45.1",
               "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/srka3qivr7p6dbfppz40hqapvzs1pnff-git-2.45.1-debug"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/5yz7i6i36crczabprnmcql484bs9bpcp-git-2.45.1-doc"
             }
           ],
-          "store_path": "/nix/store/vj57s459a3bs2ba1bvddgmd6ifcfnpy7-mongodb-6.0.16"
+          "store_path": "/nix/store/ndw4d3hgsy7d7dfg2z7a5q2amin2d9r5-git-2.45.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/im8cvjk9vrmrazdfn925p8lbr9yszkva-mongodb-6.0.16",
+              "path": "/nix/store/5hkhxkqzwyak9ji766885jm98pgkxxjx-git-2.45.1",
               "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/f41zpwrc7ddprr9mydn8j00vsbvs3z63-git-2.45.1-doc"
             }
           ],
-          "store_path": "/nix/store/im8cvjk9vrmrazdfn925p8lbr9yszkva-mongodb-6.0.16"
+          "store_path": "/nix/store/5hkhxkqzwyak9ji766885jm98pgkxxjx-git-2.45.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/76bimkgbyj4knjh0cr162nm2yja70jib-mongodb-6.0.16",
+              "path": "/nix/store/jsbha1gg6lzzj7icrg3h0npgm8vwf80c-git-2.45.1",
               "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/4r2pm5la8w0zl12lqf6lwg8ycq28jbll-git-2.45.1-debug"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/ba7r274fm1v4r9zfgjr4qfsby1hxikgc-git-2.45.1-doc"
             }
           ],
-          "store_path": "/nix/store/76bimkgbyj4knjh0cr162nm2yja70jib-mongodb-6.0.16"
+          "store_path": "/nix/store/jsbha1gg6lzzj7icrg3h0npgm8vwf80c-git-2.45.1"
         }
       }
     },
-    "python@latest": {
+    "go-task@latest": {
+      "last_modified": "2024-06-12T20:55:33Z",
+      "resolved": "github:NixOS/nixpkgs/a9858885e197f984d92d7fe64e9fff6b2e488d40#go-task",
+      "source": "devbox-search",
+      "version": "3.37.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xj1p4vb2b09610dpyn1wh7qg6axicdw9-go-task-3.37.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xj1p4vb2b09610dpyn1wh7qg6axicdw9-go-task-3.37.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i7rv367d2p5yj6hhsbja96rlkvj7fvm5-go-task-3.37.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/i7rv367d2p5yj6hhsbja96rlkvj7fvm5-go-task-3.37.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vqas5d4fd44paghrjyyj5wa52mv5inr5-go-task-3.37.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vqas5d4fd44paghrjyyj5wa52mv5inr5-go-task-3.37.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gy9vnx7dm5chq2isyi6ig9x908hb7kd6-go-task-3.37.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gy9vnx7dm5chq2isyi6ig9x908hb7kd6-go-task-3.37.2"
+        }
+      }
+    },
+    "python312Packages.pytest@latest": {
+      "last_modified": "2024-07-05T03:18:27Z",
+      "resolved": "github:NixOS/nixpkgs/d9c0b9d611277e42e6db055636ba0409c59db6d2#python312Packages.pytest",
+      "source": "devbox-search",
+      "version": "8.1.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ssd1zb4va27h1bibs9rdx3xplavl7x06-python3.12-pytest-8.1.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/sf0yw65nbbppvrgm72yq42ac2svz6bmx-python3.12-pytest-8.1.1-dist"
+            },
+            {
+              "name": "testout",
+              "path": "/nix/store/7l4dqnil4g86d3fvl2vsp01w8v0cxf0g-python3.12-pytest-8.1.1-testout"
+            }
+          ],
+          "store_path": "/nix/store/ssd1zb4va27h1bibs9rdx3xplavl7x06-python3.12-pytest-8.1.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ixhcmdca2cq33dq9qwc4agqx1y0fm92m-python3.12-pytest-8.1.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/rn5cq8p194zqvzycvfcff34qlrmdjsyz-python3.12-pytest-8.1.1-dist"
+            },
+            {
+              "name": "testout",
+              "path": "/nix/store/x7j0kdprd321s8jxlqkmw8q7rffy2403-python3.12-pytest-8.1.1-testout"
+            }
+          ],
+          "store_path": "/nix/store/ixhcmdca2cq33dq9qwc4agqx1y0fm92m-python3.12-pytest-8.1.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/h3425hnq8lslsc5jnpkn762icw73f5b2-python3.12-pytest-8.1.1",
+              "default": true
+            },
+            {
+              "name": "testout",
+              "path": "/nix/store/zynx54mb47pilax7ml94pc1kmirlf8pa-python3.12-pytest-8.1.1-testout"
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/l7cn348a6q66440d0fvxavrm6hnl804c-python3.12-pytest-8.1.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/h3425hnq8lslsc5jnpkn762icw73f5b2-python3.12-pytest-8.1.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cna1yhxcixpmkrvsbcykq7ndx0fbzfm7-python3.12-pytest-8.1.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/x3qzq9iccl7f4yfvib16338yzvqiqca0-python3.12-pytest-8.1.1-dist"
+            },
+            {
+              "name": "testout",
+              "path": "/nix/store/qwnahv1armlgab826b5s2i4ynmcwr4z2-python3.12-pytest-8.1.1-testout"
+            }
+          ],
+          "store_path": "/nix/store/cna1yhxcixpmkrvsbcykq7ndx0fbzfm7-python3.12-pytest-8.1.1"
+        }
+      }
+    },
+    "python312Packages.redis@latest": {
+      "last_modified": "2024-06-12T20:55:33Z",
+      "resolved": "github:NixOS/nixpkgs/a9858885e197f984d92d7fe64e9fff6b2e488d40#python312Packages.redis",
+      "source": "devbox-search",
+      "version": "5.0.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qhax1lwf82fwadnx22vhjg2vpv06khd6-python3.12-redis-5.0.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/l0k7wfv2d56m5nsvfilg69cklq6vwp0r-python3.12-redis-5.0.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/qhax1lwf82fwadnx22vhjg2vpv06khd6-python3.12-redis-5.0.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y35gnprf4chxs4639m1fapaqmwyg83qd-python3.12-redis-5.0.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/7qn9hzg9crnisd38xmciamq4cpr4vw69-python3.12-redis-5.0.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/y35gnprf4chxs4639m1fapaqmwyg83qd-python3.12-redis-5.0.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/h4pvrxlsbgfsc4zirvclr3sq34av5wm6-python3.12-redis-5.0.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/h8w0186j0ffcciiwj3ly8b5mldg4759x-python3.12-redis-5.0.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/h4pvrxlsbgfsc4zirvclr3sq34av5wm6-python3.12-redis-5.0.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/54jwmb0a5y96138nnan79qhvhfv8dim3-python3.12-redis-5.0.3",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/f2rfyd0sz1ds8kv7rylj13srfjbc0z4j-python3.12-redis-5.0.3-dist"
+            }
+          ],
+          "store_path": "/nix/store/54jwmb0a5y96138nnan79qhvhfv8dim3-python3.12-redis-5.0.3"
+        }
+      }
+    },
+    "python@3.12.3": {
       "last_modified": "2024-06-12T20:55:33Z",
       "plugin_version": "0.0.3",
       "resolved": "github:NixOS/nixpkgs/a9858885e197f984d92d7fe64e9fff6b2e488d40#python312",
@@ -106,7 +322,7 @@
         }
       }
     },
-    "redis@latest": {
+    "redis@7.2.5": {
       "last_modified": "2024-06-12T20:55:33Z",
       "plugin_version": "0.0.2",
       "resolved": "github:NixOS/nixpkgs/a9858885e197f984d92d7fe64e9fff6b2e488d40#redis",
