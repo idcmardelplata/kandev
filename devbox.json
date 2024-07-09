@@ -6,12 +6,17 @@
     "git@latest",
     "redis@7.2.5",
     "python312Packages.redis@latest",
-    "go-task@latest"
+    "go-task@latest",
+    "bat@latest",
+    "glow@latest",
+    "tmux@latest",
+    "ripgrep@latest",
+    "fzf@latest"
   ],
   "shell": {
     "init_hook": [
       "source $VENV_DIR/bin/activate",
-      "devbox services up"
+      "glow docs/development.md"
     ],
     "scripts": {
       "test": "task test",
