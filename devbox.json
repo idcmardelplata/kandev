@@ -20,7 +20,7 @@
     ],
     "scripts": {
       "test": "task test",
-      "run":  "task build"
+      "it":  "task build"
     }
   }
 }

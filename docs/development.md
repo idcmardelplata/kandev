@@ -14,3 +14,7 @@ no llega a conectarse correctamente siga estos pasos:
    tenga en cuenta de que esto no garantiza que redis pueda ver otras
    instancias dado que el firewall seguramente este bloqueando las conexiones.  
 
+## Tareas
+
+`devbox run it`: ejecuta el ejemplo
+`devbox run test`: ejecuta las pruebas en caso de existir
