@@ -1,5 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Any
+import uuid
+import json
+from datetime import datetime
 import redis
 
 class Task:
@@ -7,14 +10,33 @@ class Task:
     def __init__(self, name:str, description: str):
         self.__name = name
         self.__description = description
+        self.__id = f"Card:${uuid.uuid4()}"
+        self.__creation_date = datetime.now().strftime("%d/%m/%y %H:%M:%S")
+
+    def id(self) -> str:
+        return self.__id
 
     def name(self) -> str:
         return self.__name
 
     def description(self) -> str:
         return self.__description
-        
 
+    def toJson(self):
+        """
+        HACK: Este parser puede ser util cuando necesitemos
+        persistir la informacion en formato json en redis.
+        """
+        dumped_value = {
+                "Task": {
+                    "id": self.__id,
+                    "title": self.__name,
+                    "description": self.__description,
+                    "creationDate": self.__creation_date
+                    }
+                }
+        return json.dumps(dumped_value, sort_keys=True)
+        
 
 class Store(ABC):
     """
@@ -39,11 +61,9 @@ class RedisStore(Store):
         This method should be executed before all others methods
         """
         self.__redis = redis.Redis(host=host, port=port, decode_responses=True)   
-        self.__isConnected = True
 
     def setCard(self, task: Task):
-        #TODO: Establecer un id y usar ese id como clave.
-        self.__redis.set(name=task.name(), value=task.description())
+        self.__redis.set(name = task.id(), value= task.toJson())
 
     def getCard(self, taskName: str) -> Any:
         return self.__redis.get(taskName)
@@ -52,7 +72,7 @@ class RedisStore(Store):
 if __name__ == "__main__":
     store = RedisStore()
     store.connect()
-    task: Task = Task(name="Simple task", description="example of simple task" )
+    task: Task = Task(name="Basic task", description="Other simple task" )
     store.setCard(task)
-    print(store.getCard("Simple task"))
+    print(store.getCard("Basic task"))
     
