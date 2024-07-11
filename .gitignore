@@ -6,6 +6,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
 
 # C extensions
 *.so
@@ -29,6 +30,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.surrealdb/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -172,5 +174,8 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+# devbox 
+.devbox
 
 # End of https://www.toptal.com/developers/gitignore/api/python
