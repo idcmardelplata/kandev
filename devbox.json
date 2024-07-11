@@ -16,6 +16,7 @@
   "shell": {
     "init_hook": [
       "source $VENV_DIR/bin/activate",
+      "devbox services start redis",
       "glow docs/development.md"
     ],
     "scripts": {
